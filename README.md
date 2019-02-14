@@ -16,24 +16,31 @@ NOAA CO2:
 ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt
 
 Division of Atmospheric Research, CSIRO CO2 Data: 
-https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat
+[CSIRO CO2 Data](https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat)
 
 NOAA Station Data:
-ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/
+[NOAA's Data](ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/)
+
 NOAA Station Readme:
-ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/readme.txt
+[NOAA's Readme](ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/readme.txt)
 
 After downloading the full station datasets I isolated all of the stations in Minnesota, then averaged the number of days above 90 and total precipitation for every year. Some of the stations go as far back as 1880 where-as others only go back as far as the early 1900's because of this I decided to choose my starting year as 1918 and my finishing year as 2018 giving us a century worth of data. 
 
 As with most datasets there were some unrecorded values, the way I handled this was just by assuming that any day that the temperature was not recorded was below 90 degrees. I think this is a fair way of doing it as the missing values are spread among different seasons.
 
 ## Exploratory Data Analysis
-PAIR PLOT PICTURE HERE
+![alt text](images/pairplot.png)
 
 Lots of interesting plots here one of the most fascinating I see is the CO2/Year plot after 1950 it starts to grow exponentially. My theory is 1950 was a time of great growth for the transportation industrys, as-well as in the late 1960's Brazil started ramping up their deforestation efforts. In 1955 the first automobile companys sold over 6 million units in one year and by the end of the 50's commercial airlines were becoming more and more streamlined yet another contributer to the growth of CO2 in our atmosphere.
 
+I found a paper published by David Hofmann who works at the NOAA lab in Boulder, CO. Hoffman's paper shows a very strong relationship with world population which intuitvely makes lots of sense.
+
+[Hoffman's Paper](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjouuH2krzgAhWJrFQKHZilAm8QFjAAegQIChAC&url=https%3A%2F%2Fams.confex.com%2Fams%2Fpdfpapers%2F144105.pdf&usg=AOvVaw1Qgv2cLAc_YmQHCkt6mfOm)
+
 Another interesting plot is the Days Above 90 vs Year
 
-ZOOMED IN PICTURE OF TMAX vs YEAR
+![alt text](images/zoomedindaysabove90.png)
+
+
 
 HEATMAP PICTURE HERE
