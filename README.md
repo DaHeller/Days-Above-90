@@ -83,6 +83,10 @@ With an adjusted R-squared of .286 we can safely say my model is not a great way
 
 
 
+## Acknowledgments
+The EPA for the heat wave index graph 
+https://www.epa.gov/climate-indicators/climate-change-indicators-high-and-low-temperatures
 
-
+4th National Climate Assesment from the Federal Gov't of the USA for the map graph
+https://science2017.globalchange.gov/img/styles/figure6_3-1200.png
 
