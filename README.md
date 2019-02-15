@@ -19,7 +19,7 @@ Division of Atmospheric Research, CSIRO CO2 Data:
 [CSIRO CO2 Data](https://cdiac.ess-dive.lbl.gov/ftp/trends/co2/lawdome.combined.dat)
 
 NOAA United States Historical Climatology Network (USHCN) Station Data:
-ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/
+ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/ (ghcnd_hcn.tar.gz)
 
 NOAA Station Readme:
 ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/readme.txt
