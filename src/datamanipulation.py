@@ -55,7 +55,7 @@ for stationfilename in minesota_list:#for loop to go through all the file names
     key_prcp = stationfilename + "PRCP"
     tmax_arr = [] #list of lists every list inside is a row
     prcp_arr = [] 
-    station = open("/home/david/galvanize/capstones/weatherdata/{}".format(stationfilename),"r") #open the file based on where it is in father loop
+    station = open("/home/david/galvanize/capstones/weatherdata/ghcnd_hcn/{}".format(stationfilename),"r") #open the file based on where it is in father loop
     for line in station: #loop to read every line and append the actual data
         if line[17:21] == "TMAX" or line[17:21] == "PRCP":
             vals=[]
@@ -134,13 +134,13 @@ df2.reset_index(inplace=True) #reset the index again as the group by has messed 
 
 
 
-co2 = open("co2data.txt","r")
+co2 = open("co2data.txt","r") #Custom text file with just the year and avgCO2 amount from CSIRO
 co2df = []
 for line in co2: #read the non-noaa co2data and append to a list
     yearco2 = int(line[0:4])
     co2val= float(line[21:26])
     co2df.append([yearco2,co2val]) #append to a list of lists that will become a Dataframe
-co2noaa = open("co2noaadata.txt","r")
+co2noaa = open("co2noaadata.txt","r") #Custom text file with the date and all the associated values from NOAA CO2
 co2dfnoaa=[]
 for line in co2noaa: #read the noaa co2data and append to a list
     yearco2 = int(line[0:4])
